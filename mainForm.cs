@@ -63,16 +63,6 @@ namespace Secure {
 		}
 
 
-
-
-		private void newRecordToolStripMenuItem_Click(object sender, EventArgs e) {
-
-			entryForm formEntry;
-			formEntry = new entryForm();
-			formEntry.ShowDialog();
-
-		}
-
 		private void aboutToolStripMenuItem_Click(object sender, EventArgs e) {
 			MessageBox.Show("Author: Haider Ali Mirza\nVersion: 0.0.0", "About Secure", MessageBoxButtons.OK, MessageBoxIcon.Information);
 		}
@@ -80,16 +70,40 @@ namespace Secure {
 
 		private void btnRefresh_Click(object sender, EventArgs e) {
 
-			string[] lines = System.IO.File.ReadAllLines("text.secure");
+			string dir = System.IO.Directory.GetCurrentDirectory();
+
+			string[] lines = System.IO.File.ReadAllLines(dir + "/text.secure");
 
 			string key = "123";
 
 			int a = lines.Length;
 			txtOutput.Text = "";
+
 			for (int n = 0; n < a; n++) {
-				MessageBox.Show(lines[n]);
-				txtOutput.Text += Scramble(lines[n], key) + Environment.NewLine;
+
+				txtOutput.Text += "___________________________________" + Environment.NewLine + Environment.NewLine;
+
+				string[] plainText = Scramble(lines[n], key).Split(',');
+
+				string name = plainText[0];
+				string email = plainText[1];
+				string username = plainText[2];
+				string password = plainText[3];
+
+				txtOutput.Text += "Name:	" + name + Environment.NewLine;
+				txtOutput.Text += "Email:	" + email + Environment.NewLine;
+				txtOutput.Text += "User:	" + username + Environment.NewLine;
+				txtOutput.Text += "Pass:	" + password + Environment.NewLine;
+
+				txtOutput.Text += Environment.NewLine;
 			}
+		}
+
+		private void newToolStripMenuItem_Click(object sender, EventArgs e) {
+			entryForm formEntry;
+			formEntry = new entryForm();
+			formEntry.ShowDialog();
+
 		}
 	}
 }

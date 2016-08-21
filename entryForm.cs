@@ -64,9 +64,6 @@ namespace Secure {
 
 			cipher = Scramble(line, encKey);
 
-			MessageBox.Show(cipher, "cipher");
-
-
 
 			using (System.IO.StreamWriter file = new System.IO.StreamWriter("text.secure", true)) {
 				file.WriteLine(cipher);
@@ -75,8 +72,7 @@ namespace Secure {
 
 
 			plain = Scramble(cipher, encKey);
-
-			MessageBox.Show(plain, "plain");
+			MessageBox.Show("Your info was saved successfully!");
 
 			this.Close();
 		}

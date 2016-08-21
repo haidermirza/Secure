@@ -27,8 +27,6 @@ namespace Secure {
 
 			else { 
 				
-				//MessageBox.Show("Login Success", "", MessageBoxButtons.OK, MessageBoxIcon.Asterisk);
-
 				this.Hide();
 				mainForm form = new mainForm();
 				form.Show();

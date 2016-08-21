@@ -45,7 +45,6 @@
 			this.txtEntryName.Name = "txtEntryName";
 			this.txtEntryName.Size = new System.Drawing.Size(138, 20);
 			this.txtEntryName.TabIndex = 0;
-			this.txtEntryName.Text = "ali";
 			// 
 			// txtEntryEmail
 			// 
@@ -53,7 +52,6 @@
 			this.txtEntryEmail.Name = "txtEntryEmail";
 			this.txtEntryEmail.Size = new System.Drawing.Size(138, 20);
 			this.txtEntryEmail.TabIndex = 1;
-			this.txtEntryEmail.Text = "ali@yahoo.com";
 			// 
 			// txtEntryUsername
 			// 
@@ -61,7 +59,6 @@
 			this.txtEntryUsername.Name = "txtEntryUsername";
 			this.txtEntryUsername.Size = new System.Drawing.Size(138, 20);
 			this.txtEntryUsername.TabIndex = 2;
-			this.txtEntryUsername.Text = "alimirza";
 			// 
 			// txtEntryPassword
 			// 
@@ -69,7 +66,6 @@
 			this.txtEntryPassword.Name = "txtEntryPassword";
 			this.txtEntryPassword.Size = new System.Drawing.Size(138, 20);
 			this.txtEntryPassword.TabIndex = 3;
-			this.txtEntryPassword.Text = "password";
 			// 
 			// groupBox1
 			// 

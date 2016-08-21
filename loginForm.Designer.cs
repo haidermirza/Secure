@@ -46,7 +46,7 @@
 			this.txtLoginUsername.Name = "txtLoginUsername";
 			this.txtLoginUsername.Size = new System.Drawing.Size(100, 20);
 			this.txtLoginUsername.TabIndex = 1;
-			this.txtLoginUsername.Text = "haider";
+			this.txtLoginUsername.Text = "a";
 			// 
 			// txtLoginPassword
 			// 
@@ -55,7 +55,7 @@
 			this.txtLoginPassword.PasswordChar = '+';
 			this.txtLoginPassword.Size = new System.Drawing.Size(100, 20);
 			this.txtLoginPassword.TabIndex = 2;
-			this.txtLoginPassword.Text = "abc";
+			this.txtLoginPassword.Text = "a";
 			// 
 			// label1
 			// 
